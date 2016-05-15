@@ -1,0 +1,201 @@
+@media screen and (max-width: 480px)
+{
+    nav
+    {
+        display: block;
+        width: 100%;
+    }
+}
+
+*{
+   padding: 0px ;
+   margin: 0px ;  
+}
+
+#banniere_image
+/*  J ai deplace la hauteur et la largeur dans cet id, rajoute le text align pour aligner l image de la banniere*/
+{
+	text-align: center;
+	height: 100%;
+	width: 100%;
+    margin-top: 10px;
+    height: 200px;
+	width: 80%;
+	border-radius: 5px;
+    position: relative;
+    margin-bottom: 1px;
+    	/* ajout de la couleur de fond*/
+	background-color: rgb(254, 41, 61);
+   }
+	
+#banniere_image img {
+/*  et ajout de la hauteur de l image pour que ca rentre dans le cadre */	
+	height: 100%
+	}
+	
+/*--------------------footer------------*/
+footer:not(.footer_article){
+	width: 80%;				
+	height: 100px;
+	bottom: 0px;
+	background-color:MidnightBlue;
+ }
+
+*.infooter, *.imgliens {
+	display: inline-block;	
+	color: white;
+	width: 15%;
+	vertical-align: top;
+	padding: 3px;
+	margin-left: 5px;
+	text-align: left;
+}
+
+*.infooter img{
+	height: 50%;
+}
+
+#liens{
+	text-align: right;
+}
+
+*.infooter ul, *.imgliens ul{
+	list-style : none;
+}
+
+*.infooter li{
+	list-style : none;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+*.infooter ul a{
+color: white;
+}
+
+body{
+	background: url("couverture.JPG") no-repeat fixed 50% 0%;
+	background-size :cover;
+	font: 16px/25px "Helvetica",arial, sans-serif;
+	color: LightGray;
+	text-decoration: none;
+	text-align: justify;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	min-width: 870px;
+}
+
+/*-----------MENU-GAUCHE-------------*/
+*.menuGauche{
+	background-color:MidnightBlue;
+	width: 180px;
+	padding: 5px;
+	color: white;
+	position: float;  /* erreur ici valeurs au choix : static, fixed, relative ou absolute*/
+	margin-top:0px;				
+  height: 250px;
+  text-decoration: none;
+}
+
+
+*.menuGauche li{
+	margin-top: 5px;
+	
+    font-size : 14px;
+}
+
+*.menuGauche a{
+	color: white;
+}
+
+
+/*-----------MENU-droite-------------*/
+.menuDroite{
+  
+	margin-left : 200px;
+	line-height: 26px;
+	width: 100%;
+
+
+	z-index: -1;
+	}
+
+
+
+#menu /* Ensemble du menu */
+{
+        text-align : center;
+        font-weight : bold; 
+        font-family : Arial; 
+        font-size : 12px;
+		list-style: none;
+}
+
+
+#menu a /* Contenu des listes */
+{
+        display : block; 
+        padding : 0; 
+        
+        color : black;
+        text-decoration : none; 
+        width : 144px; 
+		list-style : none;
+
+}
+
+#menu>li{
+	border : 1px solid ;
+  color: black;
+}
+
+
+#menu li /* Elements des listes */      
+{ 
+        float : left; 
+        list-style : none;
+}
+
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+html>body #menu li ul li                
+{
+        border-top : 1px solid White; /*#fff*/
+        z-index:+5;
+}
+
+/*------------Corps article principal--------*/
+#im_sarouels{
+	position: relative;
+	width: 20%;
+  
+}
+#im_sarouels2{
+	position: relative;
+	width: 28%;
+    
+}
+#im_sarouels3{
+	position: relative;
+	width: 28%;
+}
+#im_sarouels1a{
+	position: relative;
+	width: 50%;
+}
+#im_sarouels2a{
+	position: relative;
+	width: 50%;
+}
+#im_sarouels3a{
+	position: relative;
+	width: 50%;
+}
+.corps {
+ margin-left: 250px;
+ margin-top: -200px;
+}
+
+

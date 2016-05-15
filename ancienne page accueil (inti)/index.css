@@ -1,0 +1,91 @@
+body {
+	background: black url("couverture.JPG") no-repeat fixed 50% 0%;
+					/* color 	-	image 		-		repeat - attachment - position 		ordre des valeurs de background*/
+}
+
+#global  {
+	position: relative;
+	width: 1000px;
+	height: 700px;
+	left: 300px;
+	border: solid 1px #AE2334;
+}
+
+header {
+	text-align: center;
+	background-color: rgb(254, 41, 61);
+}
+
+#logo {
+	height: 150px;
+}
+
+#presentation {
+	float: left;
+	width: 400px;
+	height: 500px;
+	margin: 5px;
+	padding: 5px;
+	border: solid 1px #000000;	
+	background-color: #404040; /* rappel : cette couleur est uitilisée quand on clique sur les liens dans le footer => si on la change, pensez à changer celles des liens du footer*/
+}
+
+#main_page {
+	float: left;
+	width: 415px;
+	padding: 5px;
+	margin: 5px;
+	border: solid 1px #000000;	
+}
+
+.placement_images {
+	}
+
+.cadre_image {
+	padding: 5px;
+	width: 125px;
+	height: 200px;
+	// border: solid 1px #000;	
+}
+
+#bloc_bouton {
+	text-align: center;
+}
+
+#bouton_boutique {
+	background-color: rgb(254,41,61);
+	color: white;
+	padding: 5px 10px; /* rappel : ces dimensions sont utilisées pour les liens du footer également => si elles changent, changer celles du footer pour la cohérence */
+	margin: 10px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+footer {
+	background:rgb(254,41,61);
+	float:left;
+	width:100%;
+	border: solid 1px #0A0A0A;	
+}
+
+footer a:link {
+	text-decoration :none;
+	color: black;
+	padding: 5px 10px;
+}
+
+footer a:hover {
+	 text-decoration: underline;
+}
+
+footer a:active {
+	color: #404040;
+}
+
+ footer ul {
+	display: inline-block;
+}
+
+footer li {
+	list-style: none;
+}
