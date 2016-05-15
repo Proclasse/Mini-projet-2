@@ -10,10 +10,5 @@
   <body>
   
 		<header>
-		
-		<div id="banniere_image">
-			<!-- ajout du logo laplokpik, sur fond transparent, la couleur de fond est faite dans le css -->
-			<a href="accueil.php"><img src="logos/laplokend.png" alt="notre_bannière"></a>
-	</div>
-			    
+			<a href="accueil.php"><img src="logos/xs-laplokend.png" alt="notre_bannière"></a>
 		</header>
