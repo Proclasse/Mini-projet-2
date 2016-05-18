@@ -8,7 +8,7 @@
 	?>
 	
 	<section>
-		<h1>Les robes</h1>
+		<h1>Les déguisements</h1>
 	</section>
 	
 </div>

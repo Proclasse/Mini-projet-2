@@ -8,10 +8,9 @@
 	?>
 	
 	<section>
-		<h1>Les robes</h1>
+		<h1>Les jupes</h1>
 	</section>
 	
 </div>
 <?php
    include 'footer.inc.php';
-?>
