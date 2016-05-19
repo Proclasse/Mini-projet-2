@@ -11,7 +11,7 @@
 			</div>
 	
 			<div class="bloc_footer">
-						<a href="contact.html">Contact</a>
+						<a href="contact.php">Contact</a>
 			</div>
 		</span>
 		

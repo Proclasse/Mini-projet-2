@@ -7,7 +7,7 @@
 	include 'menu.inc.php';
 	?>
 	<section>
-		<h1>Les sarouels</h1>
+		<h1>Les snoods</h1>
 	<!-- Connexion à la bdd -->
 	<?php 
 	
