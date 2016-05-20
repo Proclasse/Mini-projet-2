@@ -1,34 +1,34 @@
 <nav id="menu">
 	<ul>
 		<li>
-			<a href="Customs.php">Customs</a>
+			<a href="articles.php?id=2&amp;nom=customs">Customs</a>
 		</li>
 		<li>
-			<a href="Deguisements.php">Déguisements</a>
+			<a href="articles.php?id=3&amp;nom=déguisements">Déguisements</a>
 		</li>
 		<li>
-			<a href="Doudous.php">Doudous</a>
+			<a href="articles.php?id=1&amp;nom=doudous">Doudous</a>
 		</li>
 		<li>
-			<a href="Ensembles.php">Ensembles</a>
+			<a href="articles.php?id=4&amp;nom=ensembles">Ensembles</a>
 		</li>
 		<li>
-			<a href="Hauts.php">Hauts</a>
+			<a href="articles.php?id=5&amp;nom=hauts">Hauts</a>
 		</li>
 		<li>
-			<a href="Jupes.php">Jupes</a>
+			<a href="articles.php?id=6&amp;nom=jupes">Jupes</a>
 		</li>
 		<li>
-			<a href="Pantalons.php">Pantalons</a>
+			<a href="articles.php?id=7&amp;nom=pantalons">Pantalons</a>
 		</li>
 		<li>
-			<a href="Robes.php">Robes</a>
+			<a href="articles.php?id=8&amp;nom=robes">Robes</a>
 		</li>
 		<li>
-			<a href="Sarouels.php">Sarouels</a>
+			<a href="articles.php?id=9&amp;nom=sarouels">Sarouels</a>
 		</li>
 		<li>
-			<a href="Snoods.php">Snoods</a>
+			<a href="articles.php?id=10&amp;nom=snoods">Snoods</a>
 		</li>
 	</ul>
 </nav>

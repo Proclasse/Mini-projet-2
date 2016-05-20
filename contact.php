@@ -20,7 +20,7 @@ include 'head.inc.php';
 
 		<div>
 			<span title="Adresse mail requise"><label class="form_col" for="mail">Adresse mail : </label></span>
-			<input class="form_col" name="mail" title="Adresse mail requise." placeholder="Adresse mail requise" type="text" size="20" maxlength="100" required />
+			<input class="form_col" name="mail" title="Adresse mail requise." placeholder="Adresse mail requise" type="email" size="20" maxlength="100" required />
 			<!--span class="tooltip"> Adresse invalide</span-->
 		</div>
 
