@@ -1,6 +1,10 @@
 <nav id="menu">
 	<ul>
 		<li>
+			<a href="accueil.php">Présentation</a>
+		</li>
+		<hr />
+		<li>
 			<a href="articles.php?id=2&amp;nom=customs">Customs</a>
 		</li>
 		<li>

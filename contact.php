@@ -8,23 +8,24 @@ include 'head.inc.php';
 	include 'menu.inc.php';
 	?>
 
-	<form method="post" action="traitement.php" id="myForm">
+	<section>
+
+	<form method="post" action="traitement.php">
 
 		<div>
-			<span title="Nom 3 caractères mini requis."><label class="form_col">NOM prénom : </label></span>
-			<input class="form_col" name="nom" title="Nom 3 caractères mini requis." placeholder="3 caractères mini." type="text" size="20" maxlength="25" onkeypress="return noNumeric(event);" onblur="myUpperCase(id);" required autofocus/>
-			<!--span class="tooltip"> 3 caractères minimum</span-->
+			<label class="form_col">NOM Prénom : </label>
+			<input id="champ_nom" class="form_col" name="nom" placeholder="3 caractères minimum" type="text" size="20" maxlength="25" onkeyup="test_nom(); test_submit();" required autofocus/>
+			<span id="verificateur_nom" class="tooltip"> 3 caractères minimum <span id="check_nom">&#10004;</span><span id="uncheck_nom">&#10008;</span></span>
 		</div>
 		<br />
 		<br />
 
 		<div>
-			<span title="Adresse mail requise"><label class="form_col" for="mail">Adresse mail : </label></span>
-			<input class="form_col" name="mail" title="Adresse mail requise." placeholder="Adresse mail requise" type="email" size="20" maxlength="100" required />
-			<!--span class="tooltip"> Adresse invalide</span-->
+			<label class="form_col" for="mail">Adresse mail : </label>
+			<input id="champ_mail" class="form_col" name="mail" placeholder="Adresse mail requise" type="email" size="20" maxlength="100" onkeyup="test_mail(); test_submit();" required />
+			<span id="verificateur_mail" class="tooltip"> Adresse valide <span id="check_mail">&#10004;</span><span id="uncheck_mail">&#10008;</span></span>
 		</div>
 
-		</fieldset>
 		<br/>
 		<fieldset>
 			<legend>
@@ -47,11 +48,13 @@ include 'head.inc.php';
 		</fieldset>
 
 		<span class="form_col"></span>
-		<input type="submit" value="Envoyer" />
+		<input id="submit_button" type="submit" value="Envoyer" disabled="true"/> <!-- à rajouter onsubmit -->
 		<input type="reset" value="Annuler" />
 
 	</form>
 	<script src="contact.js" type="text/javascript"></script>
+
+</section>
 </div>
 
 <?php

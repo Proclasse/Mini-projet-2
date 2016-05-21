@@ -1,16 +1,16 @@
 @viewport {
-   width: device-width; 
-   zoom: 1; 
+width: device-width;
+zoom: 1;
 }
 
 img, video, canvas {
-  max-width: 90%;
+	max-width: 90%;
 }
 
 body {
-	background-color: rgb(163, 194, 194);
-	//background: black url("couverture.JPG") no-repeat fixed 50% 0%;
-	//background-size: cover;
+	background-color: rgb(163, 194, 194);//
+	background: black url("couverture.JPG") no-repeat fixed 50% 0%;//
+	background-size: cover;
 	margin: 20px;
 }
 
@@ -19,7 +19,7 @@ header {
 	margin-bottom: 30px;
 }
 
-#menu a{
+#menu a {
 	text-decoration: none;
 	color: white;
 	font-weight: bold;
@@ -28,14 +28,14 @@ header {
 
 #menu ul {
 	padding: 10px; /* le padding à 0 permet de suppirmer le décalage vers la droite */
-	background-image:linear-gradient(90deg,rgb(254, 41, 61), rgb(254, 77, 95));
+	background-image: linear-gradient(90deg,rgb(254, 41, 61), rgb(254, 77, 95));
 	border-radius: 10px;
 	box-shadow: 0px 0px 10px #555;
 }
 
 #menu ul li {
-	padding: 5px;
-	//border: 1px solid red;
+	padding: 5px;//
+	border: 1px solid red;
 	text-align: center;
 	list-style: none;
 	margin-top: -1px;
@@ -45,17 +45,15 @@ section {
 	padding: 30px;
 	border-radius: 10px;
 	box-shadow: 0px 0px 10px #555 inset;
-	background-color: white;
-	//border: 1px solid black;
+	background-color: white;//
+	border: 1px solid black;
 }
-
-
 
 footer {
 	border-radius: 10px;
 	clear: both;
-	margin-top: 50px;
-	//border: 1px solid black;
+	margin-top: 50px;//
+	border: 1px solid black;
 	text-align: center;
 	box-shadow: 0px 0px 10px #555 inset;
 }
@@ -72,17 +70,15 @@ footer a {
 }
 
 @media all and (max-width: 600px) {
-
-
 }
 
 @media all and (min-width: 601px) {
-	#container{
-		display:flex;
+	#container {
+		display: flex;
 	}
 	#menu {
-		width: 200px;
-		//border: 1px solid black;
+		width: 200px;//
+		border: 1px solid black;
 	}
 	#menu ul {
 		margin-right: 20px;
@@ -98,22 +94,21 @@ footer a {
 	}
 }
 
-	/*#menu {
-		max-width: 200px;
-		width: 27.5%; // 220/800 en pourcentage/
-		display: inline-block;
-		margin: 2.3%; // 80/800 de même/
-		border: 1px solid black;
-	}
+/*#menu {
+ max-width: 200px;
+ width: 27.5%; // 220/800 en pourcentage/
+ display: inline-block;
+ margin: 2.3%; // 80/800 de même/
+ border: 1px solid black;
+ }
 
-	section {
-		vertical-align: top;
-		width: 62.5%; // 20/800 
-		display: inline-block;
-		margin: 2.2%; //  20/800
-		border: 1px solid black;
-	}*/
-
+ section {
+ vertical-align: top;
+ width: 62.5%; // 20/800
+ display: inline-block;
+ margin: 2.2%; //  20/800
+ border: 1px solid black;
+ }*/
 
 #image_presentation {
 	float: right;
@@ -122,60 +117,76 @@ footer a {
 	box-shadow: 0px 0px 10px #555;
 }
 
- /* css de la page contact.php*/
+/* css de la page contact.php*/
 
-        .form_col {
-        display: inline-block;
-        margin-right: 15px;
-        padding: 3px 0px;
-        width: 200px;
-        min-height: 1px;
-        text-align: right;
-        }
-        
-        input {
-        padding: 2px;
-        border: 1px solid #CCC;
-        border-radius: 2px;
-        outline: none; /* Retire les bordures appliquées par certains navigateurs (Chrome notamment) lors du focus des éléments <input> */
-        }
-        
-        input:focus {
-        border-color: rgba(82, 168, 236, 0.75);
-        -moz-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
-        -webkit-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
-        box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
-        }
-        
-        .correct {
-        border-color: rgba(68, 191, 68, 0.75);
-        }
-        
-        .correct:focus {
-        border-color: rgba(68, 191, 68, 0.75);
-        -moz-box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
-        -webkit-box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
-        box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
-        }
-        
-        .incorrect {
-        border-color: rgba(191, 68, 68, 0.75);
-        }
-        
-        .incorrect:focus {
-        border-color: rgba(191, 68, 68, 0.75);
-        -moz-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
-        -webkit-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
-        box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
-        }
-        
-        .tooltip {
-        display: inline-block;
-        margin-left: 20px;
-        padding: 2px 4px;
-        border: 1px solid #555;
-        background-color: #CCC;
-        border-radius: 4px;
-        }
+#check_nom {
+	display: none;
+	color: green;
+}
 
+#uncheck_nom {
+	color: red;
+}
+
+#check_mail {
+	display: none;
+	color: green;
+}
+
+#uncheck_mail {
+	color: red;
+
+.form_col {
+	display: inline-block;
+	margin-right: 15px;
+	padding: 3px 0px;
+	width: 200px;
+	min-height: 1px;
+	text-align: right;
+}
+
+input {
+	padding: 2px;
+	border: 1px solid #CCC;
+	border-radius: 2px;
+	outline: none; /* Retire les bordures appliquées par certains navigateurs (Chrome notamment) lors du focus des éléments <input> */
+}
+
+input:focus {
+	border-color: rgba(82, 168, 236, 0.75);
+	-moz-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+	-webkit-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+	box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+}
+
+.correct {
+	border-color: rgba(68, 191, 68, 0.75);
+}
+
+.correct:focus {
+	border-color: rgba(68, 191, 68, 0.75);
+	-moz-box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+	-webkit-box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+	box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+}
+
+.incorrect {
+	border-color: rgba(191, 68, 68, 0.75);
+}
+
+.incorrect:focus {
+	border-color: rgba(191, 68, 68, 0.75);
+	-moz-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+	-webkit-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+	box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+}
+
+.tooltip {
+	display: inline-block;
+	margin-left: 20px;
+	padding: 2px 4px;
+	border: 1px solid #555;
+	background-color: #CCC;
+	border-radius: 4px;
+}
 
