@@ -125,7 +125,7 @@ footer a {
 	box-shadow: 0px 0px 10px #555;
 }
 
-/* css de la page contact.php*/
+/* ---------------css de la page contact.php----------------*/
 
 #check_nom {
 	display: none;
@@ -143,6 +143,7 @@ footer a {
 
 #uncheck_mail {
 	color: red;
+}
 
 .form_col {
 	display: inline-block;
@@ -198,3 +199,9 @@ input:focus {
 	border-radius: 4px;
 }
 
+/* ----------------css de la page admin ------------*/
+
+#webmaster {
+	display: ;
+}
+	
