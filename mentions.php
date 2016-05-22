@@ -1,20 +1,18 @@
 <?php
-   include 'head.inc.php'; // bloc head + header du doc html
-   include 'menudroite.inc.php';
-?>
+include 'head.inc.php';
+// bloc head + header du doc html
 
-<div class="menuGauche">
-      <div><h3>Presentation de l'auteur</h3>
-        <ul>
-          
-          <li><a href="contact.html">Contact</a></li>
-                    
-        </ul>
-      </div>
-     
-    </div>
+echo '
+	<div id="container">';
 
+include 'menu.inc.php';
 
-<?php
-   include 'footer.inc.php';
+echo '
+	<section>
+		<p>Les mentions légales restent à écrire ici. Elle seront fonction de ce que la cliente offrira comme service sur le site.</p>
+	</section>
+	</div>
+	';
+
+include 'footer.inc.php';
 ?>

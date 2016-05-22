@@ -17,7 +17,7 @@
 		
 		<span class="groupe_bloc">
 		 	<div class="bloc_footer">
-						<a href="mentions.html">Mentions légales</a>
+						<a href="mentions.php">Mentions légales</a>
 			</div>
 	
 			<div class="bloc_footer">

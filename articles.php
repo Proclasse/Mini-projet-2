@@ -19,8 +19,8 @@
 	// récupération de l'id de la page, on s'assure au passage qu'on a à faire à un entier compris entre 1 et 10
 	if (isset($_GET['id'])) {
 		if ( $_GET['id'] >= 1 AND $_GET['id'] <= 10 ) {
-		$_GET['id'] = (int) $_GET['id'];
-		$id = $_GET['id'];
+			$_GET['id'] = (int) $_GET['id'];
+			$id = $_GET['id'];
 		
 			// Connexion à la bdd
 			try {
@@ -29,7 +29,7 @@
 			$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 			// requête dans la variable $sql puis injection de la requête dans la base, le tout dans la variable $req
-			$sql = 'SELECT categories.liens, produits.nom
+			$sql = 'SELECT categories.liens, produits.chemin
 						FROM produits
 						INNER JOIN categories ON categorie_id = categories.id
 						WHERE categories.id = '.$id;
@@ -40,8 +40,11 @@
 				//	affichage des photos
 				foreach ($req as $u) {
 					echo "
-					<img src=".$u['liens'].$u['nom']." />
-					";
+					<div id='cadre_photos'>
+					<img src=".$u['liens'].$u['chemin']." />
+					
+					</div>
+					";// faire un deuxième foreach avec nouvelle co bdd!! 
 				}
 			}
 
@@ -52,7 +55,6 @@
 		}
 	
 	else {
-		die();
 		echo "404 page not found";
 		}
 	}
