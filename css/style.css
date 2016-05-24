@@ -8,7 +8,7 @@ img, video, canvas {
 }
 
 body {
-	background-color: rgb(163, 194, 194);
+	background-color: rgb(210, 200,200);
 	margin: 20px;
 }
 
@@ -44,7 +44,15 @@ section {
 	border-radius: 10px;
 	box-shadow: 0px 0px 10px #555 inset;
 	background-color: rgb(245, 230, 230);
-	border: 1px solid black;
+}
+
+h1 {
+	font-family: Georgia, "DejaVu Serif", Norasi,"Times New Roman", Times, "Liberation Serif", FreeSerif, serif;
+}
+
+.alinea {
+	text-indent: 2em;
+	text-align: justify;
 }
 
 #cadre_photos{
@@ -202,6 +210,6 @@ input:focus {
 /* ----------------css de la page admin ------------*/
 
 #webmaster {
-	display: ;
+	display: inline-block;
 }
 	
