@@ -212,4 +212,10 @@ input:focus {
 #webmaster {
 	display: inline-block;
 }
-	
+
+/* ---------css de la page modif_categorie-----------*/
+
+.pres_categories {
+	width: 100px;
+	display: inline-block;
+}

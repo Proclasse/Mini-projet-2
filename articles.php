@@ -16,11 +16,10 @@
 		$nom = NULL;
 	}
 		
-	// récupération de l'id de la page, on s'assure au passage qu'on a à faire à un entier compris entre 1 et 10
+	// récupération de l'id de la page
 	if (isset($_GET['id'])) {
-		if ( $_GET['id'] >= 1 AND $_GET['id'] <= 10 ) {
-			$_GET['id'] = (int) $_GET['id'];
-			$id = $_GET['id'];
+		$_GET['id'] = (int) $_GET['id'];
+		$id = $_GET['id'];
 		
 			// Connexion à la bdd
 			try {
@@ -44,20 +43,14 @@
 					<img src=".$u['liens'].$u['chemin']." />
 					
 					</div>
-					";// faire un deuxième foreach avec nouvelle co bdd!! 
+					";// faire un deuxième foreach avec nouvelle co bdd! afin d'y ajouter les noms et la description
 				}
-			}
-
+			} // fin du try
 			catch(PDOException $e) {
 				echo "Problème de connexion à la base de données :".$e->getMessage();
 			die();
 			}
 		}
-	
-	else {
-		echo "404 page not found";
-		}
-	}
 	else {
 		$id = NULL;
 		}
