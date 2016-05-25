@@ -34,5 +34,9 @@
 		<li>
 			<a href="articles.php?id=10&amp;nom=snoods">Snoods</a>
 		</li>
+		<hr />
+		<li>
+			<a href="https://www.alittlemarket.com/boutique/laplokpik-2771637.html">Ma boutique</a>
+		</li>
 	</ul>
 </nav>

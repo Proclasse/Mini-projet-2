@@ -48,7 +48,7 @@ include 'head.inc.php';
 		</fieldset>
 
 		<span class="form_col"></span>
-		<input id="submit_button" type="submit" value="Envoyer" disabled="true"/> <!-- à rajouter onsubmit -->
+		<input id="submit_button" type="submit" value="Envoyer" disabled="true"/>
 		<input type="reset" value="Annuler" />
 
 	</form>
