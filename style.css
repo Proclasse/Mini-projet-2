@@ -20,22 +20,19 @@ header {
 }
 
 .menuNav{
-	overflow: hidden;
+
 	display: inline-block;
-  margin-left:15%;
+  margin-left:5%;
+  min-width: 420px;
 }
 
 .menuNav li{
 	background-color: #f0f0f0;
-	background-image: -webkit-gradient(linear,left top, left bottom,from(#fefefe), color-stop(0.5,#f0f0f0), color-stop(0.51, #e6e6e6));
-	background-image: -moz-linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
-	background-image: -o-linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
-	background-image: -ms-linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
-	background-image: linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
 	border-right: 1px solid rgba(9, 9, 9, 0.2);
 	position:relative;
 	float: left;
-	list-style: none;
+	list-style: none; 
+  text-align : center;
 }
 
 .menuNav li a{
@@ -47,38 +44,79 @@ header {
 	text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
 	z-index:2;
 	text-decoration:none ;
-	white-space:nowrap;
+
 }
 
 
 section {
 	padding: 30px;
+ text-align: center;
 	border-radius: 10px;
 	box-shadow: 0px 0px 10px #555 inset;
 	background-color: white;
 	//border: 1px solid black;
 }
-
-
-
-footer {
-	border-radius: 10px;
-	clear: both;
-	margin-top: 50px;
-	//border: 1px solid black;
-	text-align: center;
-	box-shadow: 0px 0px 10px #555 inset;
+h1 {
+	font-family: Georgia, "DejaVu Serif", Norasi,"Times New Roman", Times, "Liberation Serif", FreeSerif, serif;
 }
 
-footer a {
-	text-decoration: none;
+.alinea {
+	text-indent: 2em;
+	text-align: justify;
 }
 
-.bloc_footer {
-	vertical-align: middle;
-	width: 250px;
+#cadre_photos{
 	display: inline-block;
-	margin: 10px;
+	padding: 3px;
+	margin: 3px;
+	border-radius: 10px;
+	border: 3px rgba(204, 102, 255, 0.5) double;
+	text-align: center;
+	background-image: linear-gradient(0deg,rgb(210, 200,200), rgb(254, 77, 95));
+}
+
+
+
+footer:not(.footer_article){
+	width: 100%;				
+	height: 100px;
+	bottom: 0px;
+  list-style : none;
+  text-align: center;
+}
+
+
+*.infooter, *.imgliens {
+	display: inline-block;	
+	color: black;
+	width: 15%;
+	vertical-align: top;
+	padding: 3px;
+	margin-left: 5px;
+	text-align: center;
+}
+
+*.infooter img{
+	height: 50%;
+  list-style : none;
+}
+
+#liens{
+	text-align: right;
+}
+
+*.infooter ul, *.imgliens ul{
+	list-style : none;
+}
+
+*.infooter li{
+	list-style : none;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+*.infooter ul a{
+color: Black;
 }
 
 @media all and (max-width: 600px) {
@@ -125,14 +163,7 @@ footer a {
 	}*/
 
 
-#image_presentation {
-	float: right;
-	margin: 20px;
-	border-radius: 10px;
-	box-shadow: 0px 0px 10px #555;
-}
 
-<<<<<<< HEAD
 .product_list {
         margin: 0 -23px -23px 0;
     }
@@ -205,97 +236,7 @@ footer a {
         letter-spacing: 1px;
         color: #ff7188;
     }
-        PRODUCT PAGE
 
-    ****************************** */
-
-    #product_info {
-        padding: 20px 0 40px 20px;
-        background-color: #fff;
-        border: 1px solid #e1e1df;
-    }
-
-    #product_info .image_container {
-        width: 800px;
-        text-align: center;
-    }
-
-    #product_info .image_container img {
-        max-width: 800px;
-
-        -webkit-transition: opacity 0.2s ease-in-out;
-        -moz-transition: opacity 0.2s ease-in-out;
-        -ms-transition: opacity 0.2s ease-in-out;
-        -o-transition: opacity 0.2s ease-in-out;
-        transition: opacity 0.2s ease-in-out;
-    }
-
-    #product_info .image_container img:hover {
-        opacity: 0.75;
-    }
-
-    #product_info .details_container {
-        width: 438px;
-        margin-left: 40px;
-    }
-
-    #product_info h1 {
-        margin: 5px 0 10px;
-        padding: 0;
-    }
-
-    #product_info .description {
-        margin: 10px 0 20px;
-        font-family: Times, 'Times New Roman', serif;
-        font-size: 14px;
-        line-height: 20px;
-        color: #2f2e2a;
-    }
-
-    #product_info .price {
-        margin: 30px 0 20px;
-        font-size: 24px;
-        line-height: 30px;
-        color: #ff7188;
-        letter-spacing: 1px;
-    }
-
-    #product_info .currency {
-        font-size: 12px;
-        letter-spacing: 1px;
-    }
-
-    #product_info .variations_container {
-        margin: 20px 0;
-    }
-
-    #product_info .add_to_cart {
-        margin: 20px 0 30px;
-    }
-
-    #product_info .out_of_stock {
-        margin: 20px 0 30px;
-        font-style: italic;
-        color: #ff7188;
-    }
-
-    #product_info .tictail_social_buttons {
-        margin: 30px 0;
-    }
-
-    #product_info .terms {
-        margin: 20px 0;
-        font-size: 11px;
-        line-height: 15px;
-    }
-
-    #product_info .terms .link {
-        margin-top: 3px;
-    }
-
-    #related_products {
-        margin-top: 35px;
-    }
 
     #related_products h2 {
         margin: 0 0 35px;
@@ -304,96 +245,14 @@ footer a {
         letter-spacing: 2px;
         text-align: center;
         text-transform: uppercase;
-    }
-"ADD TO CART" BUTTON
-
-    ****************************** */
-
-    .tictail_add_to_cart_button {
-        min-width: 200px;
-        margin: 0;
-        padding: 14px 0;
-        background-color: #2f2e2a;
-        border: 1px solid #d2d2d2;
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        line-height: 19px;
-        font-weight: bold;
-        color: #fff;
-        text-align: center;
-        text-transform: uppercase;
-        cursor: pointer;
-
-        -webkit-transition: background-color 0.2s ease-in-out;
-        -moz-transition: background-color 0.2s ease-in-out;
-        -ms-transition: background-color 0.2s ease-in-out;
-        -o-transition: background-color 0.2s ease-in-out;
-        transition: background-color 0.2s ease-in-out;
-    }
-
-    .tictail_add_to_cart_button:hover {
-        background-color: #ff7188;
+    
     }
     .column {
         display: inline-block;
         vertical-align: top;
         font-size: 14px;
         line-height: 1;
-=======
- /* css de la page contact.php*/      
-        .form_col {
-        display: inline-block;
-        margin-right: 15px;
-        padding: 3px 0px;
-        width: 200px;
-        min-height: 1px;
-        text-align: right;
-        }
-        
-        input {
-        padding: 2px;
-        border: 1px solid #CCC;
-        border-radius: 2px;
-        outline: none; /* Retire les bordures appliquées par certains navigateurs (Chrome notamment) lors du focus des éléments <input> */
-        }
-        
-        input:focus {
-        border-color: rgba(82, 168, 236, 0.75);
-        -moz-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
-        -webkit-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
-        box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
-        }
-        
-        .correct {
-        border-color: rgba(68, 191, 68, 0.75);
-        }
-        
-        .correct:focus {
-        border-color: rgba(68, 191, 68, 0.75);
-        -moz-box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
-        -webkit-box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
-        box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
-        }
-        
-        .incorrect {
-        border-color: rgba(191, 68, 68, 0.75);
-        }
-        
-        .incorrect:focus {
-        border-color: rgba(191, 68, 68, 0.75);
-        -moz-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
-        -webkit-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
-        box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
-        }
-        
-        .tooltip {
-        display: inline-block;
-        margin-left: 20px;
-        padding: 2px 4px;
-        border: 1px solid #555;
-        background-color: #CCC;
-        border-radius: 4px;
-        }
-
-
->>>>>>> origin/master
+    }
+    
+  
+      
