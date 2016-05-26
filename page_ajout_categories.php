@@ -11,7 +11,7 @@ echo '
 	<div id="container">
 	';
 
-	include 'menu.inc.php';
+	include 'new_menu.inc.php';
 
 echo "
 	<section>

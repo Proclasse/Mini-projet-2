@@ -5,7 +5,7 @@ include 'head.inc.php';
 
 <div id="container">
 	<?php
-	include 'menu.inc.php';
+	include 'new_menu.inc.php';
 	?>
 
 	<section>

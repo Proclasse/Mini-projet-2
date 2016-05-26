@@ -1,9 +1,10 @@
 <?php
-   include 'head.inc.php'; // bloc head + header du doc html
+mb_internal_encoding('UTF-8'); // traitement pour indiquer à php l'utilisation de l'encodage en UTF-8
 
+   include 'head.inc.php'; // bloc head + header du doc html
 	echo '<div id="container">';
 
-	include 'menu.inc.php';
+	include 'new_menu.inc.php';
 
 	// récupération du nom de la catégorie en s'assurant qu'il ne contient pas de caractères html
 	$nom = htmlspecialchars($_GET['nom']);
@@ -43,7 +44,8 @@
 					<img src=".$u['liens'].$u['chemin']." />
 					
 					</div>
-					";// faire un deuxième foreach avec nouvelle co bdd! afin d'y ajouter les noms et la description
+					";// faire un deuxième foreach avec nouvelle co bdd! afin d'y ajouter les noms et la description.
+					// màj du 26/05 : les noms et descriptions demandés à la cliente n'ont jusqu'à aujourd'hui jamais été livrés.
 				}
 			} // fin du try
 			catch(PDOException $e) {

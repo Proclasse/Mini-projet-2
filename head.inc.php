@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-          <meta charset="utf-8" />
+          <meta http-equiv="Content-type" content="text/html" charset="UTF-8" />
           <link rel="stylesheet" href="css/style.css" />
           <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <title> La Plok Pik </title>

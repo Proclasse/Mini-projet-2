@@ -1,6 +1,16 @@
 <?php
 mb_internal_encoding('UTF-8'); // traitement pour indiquer à php l'utilisation de l'encodage en UTF-8
 
+// ce fichier reprend dynamiquement le menu en fonction des ajouts de l'admin
+echo '
+<nav id="menu">
+	<ul>
+		<li>
+			<a href="accueil.php">Présentation</a>
+		</li>
+		<hr />
+	';
+
 		// Connexion à la bdd
 		try {
 		$bdd = new PDO('mysql:host=localhost;dbname=mini-projet','root','');
@@ -8,22 +18,31 @@ mb_internal_encoding('UTF-8'); // traitement pour indiquer à php l'utilisation 
 		$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 		// requête dans la variable $sql puis injection de la requête dans la base, le tout dans la variable $req
-		$sql = 'SELECT * FROM categories';
+		$sql = 'SELECT noms, id FROM categories';
 		$req = $bdd -> query($sql);
 
-		$req -> setFetchMode(PDO::FETCH_OBJ);
+		$req -> setFetchMode(PDO::FETCH_ASSOC);
 
 			foreach ($req as $u) {
-				echo "<div>";
-				echo '<div class="pres_categories">'.$u->id.'</div>';
-				echo '<div class="pres_categories">'.$u->noms.'</div>';
-				echo '<div class="pres_categories">'.$u->liens.'</div>';
-				echo "</div>";
-			}
+				echo "
+				<li>
+					<a href='articles.php?id= ".$u['id']."&amp;nom=".$u['noms']."'>".$u['noms']."</a>
+				</li>";
+			}	
 		}
 		catch(PDOException $e) {
 			echo "Problème de connexion à la base de données :".$e->getMessage();
 		die();
 		}
 
-?>
+echo '
+		<hr />
+		<li>
+			<a href="https://www.alittlemarket.com/boutique/laplokpik-2771637.html">Ma boutique</a>
+		</li>
+	</ul>
+</nav>
+';
+
+ ?>
+

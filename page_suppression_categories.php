@@ -11,7 +11,7 @@ echo '
 	<div id="container">
 	';
 
-	include 'menu.inc.php';
+	include 'new_menu.inc.php';
 
 echo "
 	<section>
@@ -25,7 +25,7 @@ echo '
 			<h3>Supprimer une catégorie</h3>
 			<form method="post" action="ajout_suppr_categorie.php?id_as=2">
 				<div>
-					<label>- Numéro de la catégorie</label>
+					<label>- Entrer le numéro associé à la catégorie pour la supprimer</label>
 				</div>
 				<input type="text" name="id" required/>
 				<br />
