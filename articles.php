@@ -8,7 +8,7 @@ mb_internal_encoding('UTF-8'); // traitement pour indiquer à php l'utilisation 
 
 	// récupération du nom de la catégorie en s'assurant qu'il ne contient pas de caractères html
 	$nom = htmlspecialchars($_GET['nom']);
-	
+	$nom = strtolower($nom);
 	if (isset($nom)) {
 	echo "<section>
 					<h1>Les ".$nom."</h1>";
