@@ -1,5 +1,5 @@
 <?php
-mb_internal_encoding('UTF-8'); // traitement pour indiquer à php l'utilisation de l'encodage en UTF-8
+mb_internal_encoding('UTF-8'); // traitement pour indiquer à php l'utilisation de l'encodage en UTF-8 (màj : ne fonctionne toujours pas...)
 
 // ce fichier reprend dynamiquement le menu en fonction des ajouts de l'admin
 echo '

@@ -23,7 +23,7 @@ include 'presentation_categories.inc.php';
 echo '
 		<div>
 			<h3>Ajouter une catégorie</h3>
-			<form method="post" action="ajout_suppr_categorie.php?id_as=1">
+			<form method="post" action="maj_categorie.php?id_as=1">
 				<div>
 					<label>- Nom de la catégorie</label>
 				</div>

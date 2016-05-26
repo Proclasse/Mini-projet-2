@@ -22,21 +22,28 @@ include 'presentation_categories.inc.php';
 
 echo '
 		<div>
-			<h3>Supprimer une catégorie</h3>
-			<form method="post" action="maj_categorie.php?id_as=2">
+			<h3>Modifier une catégorie</h3>
+			<form method="post" action="maj_categorie.php?id_as=3">
 				<div>
-					<label>- Entrer le numéro associé à la catégorie pour la supprimer</label>
+					<label>- Nouveau nom de la catégorie</label>
+				</div>
+				<input type="text" name="noms" required/>
+				<br />
+				<br />
+				<div>
+					<label>- Choisir le numéro de la catégorie à modifier</label>
 				</div>
 				<input type="text" name="id" required/>
 				<br />
 				<br />
 				<input id="submit_button" type="submit" value="Envoyer"/>
 			</form>
-		<a href="modifs.php">Revenir à la page des modifications</a>
 		</div>
+		<a href="modifs.php">Revenir à la page des modifications</a>
 	</section>
 </div>
 	';
 
 include 'footer.inc.php';
+
 ?>
