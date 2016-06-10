@@ -13,7 +13,7 @@ echo '
 
 		// Connexion à la bdd
 		try {
-		$bdd = new PDO('mysql:host=localhost;dbname=mini-projet','root','');
+		$bdd = new PDO('mysql:host=localhost;dbname=mini-projet','root','My.1.SQL.');
 		// gestion du niveau d'erreur
 		$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 

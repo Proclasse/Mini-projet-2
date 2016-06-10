@@ -8,7 +8,7 @@ mb_internal_encoding('UTF-8'); // traitement pour indiquer à php l'utilisation 
 		$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 		// requête dans la variable $sql puis injection de la requête dans la base, le tout dans la variable $req
-		$sql = 'SELECT * FROM categories';
+		$sql = 'SELECT * FROM produits';
 		$req = $bdd -> query($sql);
 
 		$req -> setFetchMode(PDO::FETCH_OBJ);
@@ -16,8 +16,11 @@ mb_internal_encoding('UTF-8'); // traitement pour indiquer à php l'utilisation 
 			foreach ($req as $u) {
 				echo "<div>";
 				echo '<div class="pres_cat_prod">'.$u->id.'</div>';
-				echo '<div class="pres_cat_prod">'.$u->noms.'</div>';
-				echo '<div class="pres_cat_prod">'.$u->liens.'</div>';
+				echo '<div class="pres_cat_prod">'.$u->categorie_id.'</div>';
+				echo '<div class="pres_cat_prod">'.$u->chemin.'</div>';
+				echo '<div class="pres_cat_prod">'.$u->nom.'</div>';
+				echo '<div class="pres_cat_prod">'.$u->description.'</div>';
+				echo '<div class="pres_cat_prod">'.$u->lien_alm.'</div>';
 				echo "</div>";
 			}
 		}

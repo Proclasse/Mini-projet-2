@@ -9,6 +9,7 @@ mb_internal_encoding('UTF-8'); // traitement pour indiquer à php l'utilisation 
 	// récupération du nom de la catégorie en s'assurant qu'il ne contient pas de caractères html
 	$nom = htmlspecialchars($_GET['nom']);
 	
+	$nom = strtolower($nom);
 	if (isset($nom)) {
 	echo "<section>
 					<h1>Les ".$nom."</h1>";
@@ -24,12 +25,12 @@ mb_internal_encoding('UTF-8'); // traitement pour indiquer à php l'utilisation 
 		
 			// Connexion à la bdd
 			try {
-			$bdd = new PDO('mysql:host=localhost;dbname=mini-projet','root','');
+			$bdd = new PDO('mysql:host=localhost;dbname=mini-projet','root','My.1.SQL.');
 			// gestion du niveau d'erreur
 			$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 			// requête dans la variable $sql puis injection de la requête dans la base, le tout dans la variable $req
-			$sql = 'SELECT categories.liens, produits.chemin
+			$sql = 'SELECT categories.liens, produits.chemin, produits.nom, produits.lien_alm
 						FROM produits
 						INNER JOIN categories ON categorie_id = categories.id
 						WHERE categories.id = '.$id;
@@ -42,10 +43,11 @@ mb_internal_encoding('UTF-8'); // traitement pour indiquer à php l'utilisation 
 					echo "
 					<div id='cadre_photos'>
 					<img src=".$u['liens'].$u['chemin']." />
-					
+					<hr />
+					<p><a href=".$u['lien_alm'].">".$u['nom']."</a></p>
+					<hr />
 					</div>
-					";// faire un deuxième foreach avec nouvelle co bdd! afin d'y ajouter les noms et la description.
-					// màj du 26/05 : les noms et descriptions demandés à la cliente n'ont jusqu'à aujourd'hui jamais été livrés.
+					";
 				}
 			} // fin du try
 			catch(PDOException $e) {
