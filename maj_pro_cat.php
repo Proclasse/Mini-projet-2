@@ -82,4 +82,34 @@ elseif ($id_as == 3) {
 		header('Location: aj_mod_suppr.php?id_ams=3&id_procat=1');
 	}
 }
+
+elseif ($id_as == 4) {
+	// ajout d'un produit
+	if (isset($_POST['categorie_id'])) {
+		$categorie_id = (int) $_POST['categorie_id'];
+		$chemin = htmlspecialchars($_POST['chemin']);
+		$nom = htmlspecialchars($_POST['nom']);
+		$lien_alm = htmlspecialchars($_POST['lien_alm']);
+		
+		try{
+			$bdd = new PDO('mysql:host=localhost;dbname=mini-projet','root','My.1.SQL.');
+			// gestion du niveau d'erreur
+			$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+			// requête dans la variable $sql puis injection de la requête dans la base, le tout dans la variable $req
+			$sql = "INSERT INTO `produits`(`categorie_id`, `chemin`, `nom`, `lien_alm`) VALUES ('".$categorie_id."', '".$chemin.".JPG', '".$nom."','".$lien_alm."')";                       												 
+			$req = $bdd -> query($sql);
+		}
+		catch(PDOException $e) {
+			echo "Problème de connexion à la base de données :".$e->getMessage();
+			die();
+		}
+		header('Location: aj_mod_suppr.php?id_ams=4&id_procat=2');
+	}
+	else {
+		header('Location: aj_mod_suppr.php?id_ams=4&id_procat=2');
+	}
+		
+}
+
 ?>

@@ -119,7 +119,7 @@ elseif ($id_procat == 2) {
 					<br />
 					<br />
 					<div>
-						<label>Préciser le chemin (correspond au nom du fichier de la photo du produit)</label> <!-- à améliorer avec un "parcourir" -->
+						<label>Préciser le chemin (correspond au nom du fichier de la photo du produit, sans .JPG)</label> <!-- à améliorer avec un "parcourir" -->
 					</div>
 					<input type="text" name="chemin" required/>
 					<br />
