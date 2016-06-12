@@ -25,10 +25,10 @@ if ($id_as ==1 ) {
 			echo "Problème de connexion à la base de données :".$e->getMessage();
 			die();
 		}
-		header('Location: aj_mod_suppr.php?id_ams=1');
+		header('Location: aj_mod_suppr.php?id_ams=1&id_procat=1');
 	}
 	else {
-		header('Location: aj_mod_suppr.php?id_ams=1');
+		header('Location: aj_mod_suppr.php?id_ams=1&id_procat=1');
 	}
 }
 
@@ -51,10 +51,10 @@ elseif ($id_as == 2) {
 			echo "Problème de connexion à la base de données :".$e->getMessage();
 			die();
 		}
-		header('Location: aj_mod_suppr.php?id_ams=2');
+		header('Location: aj_mod_suppr.php?id_ams=2&id_procat=1');
 	}
 	else {
-		header('Location: aj_mod_suppr.php?id_ams=2');
+		header('Location: aj_mod_suppr.php?id_ams=2&id_procat=1');
 	}
 }
 
@@ -76,10 +76,10 @@ elseif ($id_as == 3) {
 			echo "Problème de connexion à la base de données :".$e->getMessage();
 			die();
 		}
-		header('Location: aj_mod_suppr.php?id_ams=3');
+		header('Location: aj_mod_suppr.php?id_ams=3&id_procat=1');
 	}
 	else {
-		header('Location: aj_mod_suppr.php?id_ams=3');
+		header('Location: aj_mod_suppr.php?id_ams=3&id_procat=1');
 	}
 }
 ?>

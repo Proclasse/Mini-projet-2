@@ -15,12 +15,13 @@ mb_internal_encoding('UTF-8'); // traitement pour indiquer à php l'utilisation 
 
 			foreach ($req as $u) {
 				echo "<div>";
-				echo '<div class="pres_cat_prod">'.$u->id.'</div>';
-				echo '<div class="pres_cat_prod">'.$u->categorie_id.'</div>';
+				echo '<div class="pres_cat_prod_id">'.$u->id.'</div>';
+				echo '<div class="pres_cat_prod_id">'.$u->categorie_id.'</div>';
 				echo '<div class="pres_cat_prod">'.$u->chemin.'</div>';
 				echo '<div class="pres_cat_prod">'.$u->nom.'</div>';
-				echo '<div class="pres_cat_prod">'.$u->description.'</div>';
+				// echo '<div class="pres_cat_prod">'.$u->description.'</div>';
 				echo '<div class="pres_cat_prod">'.$u->lien_alm.'</div>';
+				echo "<hr />";
 				echo "</div>";
 			}
 		}
