@@ -15,6 +15,7 @@ include 'head.inc.php';
 		<p class="alinea">Plus tard, j'ai eu envie de créer mes propres modèles, essentiellement des sarouels, me laissant plein de possibilités pour mes futures réalisations.</p>
  		<p class="alinea">Depuis 2002, acquisition de ma première machine, j'ai agrandi mon parc personnel d'outils, ustensiles et machines en tout genre afin de varier les styles et de proposer des finitions de meilleure qualité.</p>
 		<p class="alinea">Auto-entrepreneuse depuis 2011, je suis à l'écoute de vos désirs et commandes, je vous proposerai des ouvrages de qualité, de fabrication artisanale, chaque pièce étant unique et originale. </p>
+		<p class="alinea">Ce site est destiné à vous montrer mes différentes créations, certaines sont en vente directement sur le site alittlemarket, et toutes peuvent être réalisées de nouveau sur commande, n'hésitez pas à me contacter !</p>
 	</section>
 
 </div>

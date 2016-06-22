@@ -222,12 +222,21 @@ input:focus {
 /* ---------css des pages modif categorie-----------*/
 
 .pres_cat_prod {
-	width: auto;
-	margin-right: 150px;
+	width: 350px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	display: inline-block;
+}
+
+#pres_url {
+	width: auto;
 }
 
 .pres_cat_prod_id {
 	width: 30px;
 	display: inline-block;
+}
+
+.pres_form {
+	margin-bottom: 30px;
 }

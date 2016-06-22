@@ -35,9 +35,7 @@ if ($id_procat == 1) {
 				<div>
 					<label>- Nom de la catégorie</label>
 				</div>
-				<input type="text" name="noms" required/>
-				<br />
-				<br />
+				<input class="pres_form" type="text" name="noms" required/>
 				<input id="submit_button" type="submit" value="Envoyer"/>
 			</form>
 		</div>
@@ -56,15 +54,11 @@ elseif ($id_ams == 2) {
 				<div>
 					<label>- Nouveau nom de la catégorie</label>
 				</div>
-				<input type="text" name="noms" required/>
-				<br />
-				<br />
+				<input class="pres_form" type="text" name="noms" required/>
 				<div>
 					<label>- Choisir le numéro de la catégorie à modifier</label>
 				</div>
-				<input type="text" name="id" required/>
-				<br />
-				<br />
+				<input class="pres_form" type="text" name="id" required/>
 				<input id="submit_button" type="submit" value="Envoyer"/>
 			</form>
 		</div>
@@ -83,9 +77,7 @@ elseif ($id_ams == 3) {
 				<div>
 					<label>- Entrer le numéro associé à la catégorie pour la supprimer</label>
 				</div>
-				<input type="text" name="id" required/>
-				<br />
-				<br />
+				<input class="pres_form" type="text" name="id" required/>
 				<input id="submit_button" type="submit" value="Envoyer"/>
 			</form>
 		<a href="modifs.php">Revenir à la page des modifications</a>
@@ -106,6 +98,9 @@ elseif ($id_procat == 2) {
 	include 'presentation_produits.inc.php';
 
 	if ($id_ams == 4) {
+
+		echo "<h3>Pour rappel :</h3>";
+		include 'presentation_categories.inc.php';
 		
 		echo'
 			<div>
@@ -115,27 +110,19 @@ elseif ($id_procat == 2) {
 					<div>
 						<label>Entrer le numéro de l\'id correspondant à la catégorie (1 pour Customs, 6 pour Jupes etc.)</label>
 					</div>
-					<input type="text" name="categorie_id" required/>
-					<br />
-					<br />
+					<input class="pres_form" type="text" name="categorie_id" required/>
 					<div>
 						<label>Préciser le chemin (correspond au nom du fichier de la photo du produit, sans .JPG)</label> <!-- à améliorer avec un "parcourir" -->
 					</div>
-					<input type="text" name="chemin" required/>
-					<br />
-					<br />
+					<input class="pres_form" type="text" name="chemin" required/>
 					<div>
 						<label>Donner un nom au produit</label>
 					</div>
-					<input type="text" name="nom" required/>
-					<br />
-					<br />
+					<input class="pres_form" type="text" name="nom" required/>
 					<div>
-						<label>Enfin, entrer l\'URL vers le site alittlemarket (facultatif, peut être renseigner ultérieurement)</label>
+						<label>Enfin, entrer l\'URL vers le site alittlemarket (facultatif, peut être renseigné ultérieurement)</label>
 					</div>
-					<input type="text" name="lien_alm" />
-					<br />
-					<br />
+					<input class="pres_form" type="text" name="lien_alm" />
 					<input id="submit_button" type="submit" value="Envoyer"/>
 				</form>
 			</div>
@@ -143,9 +130,65 @@ elseif ($id_procat == 2) {
 		</section>
 	</div>
 				';
-			
 	}
+
+	elseif ($id_ams == 5) {
+		
+	echo "<h3>Pour rappel :</h3>";
+	include 'presentation_categories.inc.php';
 	
+		echo '
+			<div>
+				<h3>Modifier un produit</h3>
+				<form method="post" action="maj_pro_cat.php?id_as=5">
+				<div>
+					<label>Modification du numéro de la catégorie du produit</label>
+				</div>
+				<input class="pres_form" type="text" name="categorie_id" />
+				<div>
+					<label>Modification du chemin (nom de fichier  photo) du produit</label>
+				</div>
+				<input class="pres_form" type="text" name="chemin" />
+				<div>
+					<label>Modification du nom du produit</label>
+				</div>
+				<input class="pres_form" type="text" name="nom" />
+				<div>
+					<label>Modification de l\'adresse vers alittlemarket.com</label>
+				</div>
+				<input class="pres_form" type="text" name="lien_aml" />
+				<div>
+					<label>(obligatoire!) Préciser l\'id (numéro unique) du produit à modifier </label>
+				</div>
+				<input class="pres_form" type="text" name="id" required/>
+				<input id="submit_button" type="submit" value="Envoyer"/>
+			</form>
+		<a href="modifs.php">Revenir à la page des modifications</a>
+		</div>
+	</section>
+</div>
+		';
+	}
+
+	elseif ($id_ams == 6) {
+	
+	echo '
+		<div>
+			<h3>Supprimer un produit</h3>
+			<form method="post" action="maj_pro_cat.php?id_as=6">
+			<div>
+				<label>Indiquer le numéro du produit à supprimer</label>
+			</div>
+			<input class="pres_form" type="text" name="id" required/>
+			<input id="submit_button" type="submit" value="Envoyer"/>
+			</form>
+		<a href="modifs.php">Revenir à la page des modifications</a>
+		</div>
+	</section>
+</div>
+	';
+	}
+
 }
 
 include 'footer.inc.php';
