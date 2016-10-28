@@ -42,7 +42,7 @@ echo '
 	Adresse de courrier électronique : <strong>ploquin.cecile@bbox.fr</strong>
 	<br />
 	<br />
-	Le Créateur du site est : <strong>LELURON CLEMENTINE, ROSSI INTI</strong>
+	Le Créateur du site est : <strong>Inti ROSSI</strong>
 	<br />
 	Le Responsable de la  publication est : <strong>MARY CECILE</strong>
 	<br />
@@ -51,11 +51,11 @@ echo '
 	Le responsable de la publication est une <strong>personne physique</strong>
 	<br />
 	<br />
-	Le Webmaster est  : <strong>LELURON CLEMENTINE, ROSSI INTI</strong>
+	Le Webmaster est  : <strong>Inti ROSSI</strong>
 	<br />
 	Contactez le Webmaster : <strong><a href="mailto:ploquin.cecile@bbox.fr?subject=Contact ï¿½ partir des mentions lï¿½gales via le site laplokpik.xyz">ploquin.cecile@bbox.fr</a></strong>
 	<br />
-	L’hebergeur du site est : <strong>Hostinger: Rue K. Donelaicio 62-1 44248 Kaunas, Lituanie</strong>
+	L’hebergeur du site est : <strong>****</strong>
 	<br />
 	<u><strong>CREDITS :</strong></u> les mentions légales ont étés générées par <strong><a href="http://www.generer-mentions-legales.com">http://www.generer-mentions-legales.com</a></strong>
 	<br />

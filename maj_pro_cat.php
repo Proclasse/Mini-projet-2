@@ -4,8 +4,10 @@ if (!isset($_SESSION['pseudo'], $_SESSION['mdp'])){
 header('Location: adminCM.php');
 }
 
-// récupération de l'id pour choisir entre l'ajout , la modification ou la suppression
+// récupération de l'id pour choisir entre l'ajout, la modification ou la suppression
 $id_as = (int) $_GET['id_as'];
+
+include 'var_co_bdd.inc.php'; //inclusion des valeurs de connection à la bdd
 
 if ($id_as == 1 ) {
 	// ajout d'une catégorie	
@@ -13,7 +15,7 @@ if ($id_as == 1 ) {
 		$noms = htmlspecialchars($_POST['noms']);
 
 		try {
-			$bdd = new PDO('mysql:host=localhost;dbname=mini-projet','root','My.1.SQL.');
+			$bdd = new PDO(serveur, user, mdp);
 			// gestion du niveau d'erreur
 			$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -39,7 +41,7 @@ elseif ($id_as == 2) {
 		$noms = htmlspecialchars($_POST['noms']);
 		
 		try {
-			$bdd = new PDO('mysql:host=localhost;dbname=mini-projet','root','My.1.SQL.');
+			$bdd = new PDO(serveur, user, mdp);
 			// gestion du niveau d'erreur
 			$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -64,7 +66,7 @@ elseif ($id_as == 3) {
 		$id = (int) $_POST['id'];
 
 		try {
-			$bdd = new PDO('mysql:host=localhost;dbname=mini-projet','root','My.1.SQL.');
+			$bdd = new PDO(serveur, user, mdp);
 			// gestion du niveau d'erreur
 			$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -92,7 +94,7 @@ elseif ($id_as == 4) {
 		$lien_alm = htmlspecialchars($_POST['lien_alm']);
 		
 		try{
-			$bdd = new PDO('mysql:host=localhost;dbname=mini-projet','root','My.1.SQL.');
+			$bdd = new PDO(serveur, user, mdp);
 			// gestion du niveau d'erreur
 			$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -121,7 +123,7 @@ elseif ($id_as == 5) {
 		$lien_alm = htmlspecialchars($_POST['lien_alm']);
 		
 		try {
-			$bdd = new PDO('mysql:host=localhost;dbname=mini-projet','root','My.1.SQL.');
+			$bdd = new PDO(serveur, user, mdp);
 			// gestion du niveau d'erreur
 			$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -146,7 +148,7 @@ elseif ($id_as == 6) {
 		$id = (int) $_POST['id'];
 		
 		try {
-			$bdd = new PDO('mysql:host=localhost;dbname=mini-projet','root','My.1.SQL.');
+			$bdd = new PDO(serveur, user, mdp);
 			// gestion du niveau d'erreur
 			$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 

@@ -3,7 +3,8 @@ mb_internal_encoding('UTF-8'); // traitement pour indiquer à php l'utilisation 
 
 		// Connexion à la bdd
 		try {
-		$bdd = new PDO('mysql:host=localhost;dbname=mini-projet','root','My.1.SQL.');
+		include 'var_co_bdd.inc.php';
+		$bdd = new PDO(serveur, user, mdp);
 		// gestion du niveau d'erreur
 		$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
