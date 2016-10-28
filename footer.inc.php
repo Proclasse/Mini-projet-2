@@ -5,7 +5,7 @@
 			<div class="bloc_footer">
 				Copyright &copy; 2015-2016 LaPlokPik :
 				<br/>
-				Site en maintenance (11/2016)
+				Site en travaux (11/2016)
 				<br/>
 				Tous droits réservés
 			</div>

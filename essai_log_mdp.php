@@ -4,22 +4,9 @@ session_id();
 unset ($_SESSION['pseudo']);
 unset ($_SESSION['mdp']);
 
-	$pseudo = htmlspecialchars($_POST['pseudo']);
+	$pseudo = htmlspecialchars($_POST['pseudo']);	// récupération des variables du formulaire
 	$mdp = htmlspecialchars($_POST['mdp']);
 	$id =null;
-	
-switch ($pseudo) {
-	case 'Cecile': $id = 1;
-		break;
-	case 'Philippe': $id = 2;
-		break;
-	case 'Clementine': $id = 3;
-		break;
-	case 'Inti': $id = 4;
-		break;
-	default: $id = 1;
-		break;
-}
 
 	if (isset($pseudo, $mdp)) {
 
@@ -31,7 +18,7 @@ switch ($pseudo) {
 			$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			
 			// Préparation puis envoie de la requête
-			$sqladmin = 'SELECT login, mot_de_passe FROM admin WHERE id='.$id;
+			$sqladmin = 'SELECT login, mot_de_passe FROM admin';
 			$reqadmin = $bdd -> query($sqladmin);
 
 			$reqadmin -> setFetchMode(PDO::FETCH_ASSOC);
