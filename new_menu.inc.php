@@ -6,7 +6,7 @@ echo '
 <nav id="menu">
 	<ul>
 		<li>
-			<a href="accueil.php">Présentation</a>
+			<a href="index.php">Présentation</a>
 		</li>
 		<hr />
 	';
