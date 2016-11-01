@@ -1,3 +1,6 @@
+<p>
+	ATTENTION : PAGE EN TRAVAUX
+</p>
 <?php
 include 'head.inc.php';
 // bloc head + header du doc html

@@ -19,7 +19,7 @@ header {
 
 #menu a {
 	text-decoration: none;
-	color: white;
+	color: rgb(244, 241, 241);
 	font-weight: bold;
 	font-size: 16px;
 }
@@ -73,17 +73,32 @@ h1 {
 footer {
 	border-radius: 10px;
 	clear: both;
-	margin-top: 50px;//
-	border: 1px solid black;
+	margin-top: 50px;
 	text-align: center;
 	box-shadow: 0px 0px 10px #555 inset;
 }
 
 footer a {
 	text-decoration: none;
+	background-color: rgb(254, 41, 61);
+	padding: 5px 5px;
+	width: 150px;
+	display: inline-block;
+	text-align: center;
+	color: rgb(244, 241,241);
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px #555;
+}
+
+.icone_footer a {
+	width: inherit;
+	background-color: inherit;
+	padding: 0px;
+	box-shadow: inherit;
 }
 
 .bloc_footer {
+	color: rgb(254, 41, 61);
 	vertical-align: middle;
 	width: 250px;
 	display: inline-block;
@@ -114,22 +129,6 @@ footer a {
 		display: block;
 	}
 }
-
-/*#menu {
- max-width: 200px;
- width: 27.5%; // 220/800 en pourcentage/
- display: inline-block;
- margin: 2.3%; // 80/800 de même/
- border: 1px solid black;
- }
-
- section {
- vertical-align: top;
- width: 62.5%; // 20/800
- display: inline-block;
- margin: 2.2%; //  20/800
- border: 1px solid black;
- }*/
 
 #image_presentation {
 	float: right;

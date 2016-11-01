@@ -11,18 +11,22 @@
 			</div>
 	
 			<div class="bloc_footer">
-						<a href="contact.php">Contact</a>
+					<a href="contact.php">Contact</a>
 			</div>
 		</span>
 		
 		<span class="groupe_bloc">
 		 	<div class="bloc_footer">
-						<a href="mentions.php">Mentions légales</a>
+					<a href="mentions.php">Mentions légales</a>
 			</div>
 	
 			<div class="bloc_footer">
-					Retrouvez-moi sur : <br />
-					<a href="https://www.facebook.com/La-PloK-PiK-264384806950071/?fref=ts" target="_blank"><img src="images/facebook.png"/></a>
+					<span class="icone_footer">
+						<a href="https://www.facebook.com/La-PloK-PiK-264384806950071/?fref=ts" target="_blank"><img src="images/facebook.png"/></a>
+					</span>
+					<span class="icone_footer">
+						<a href="https://www.alittlemarket.com/boutique/laplokpik-2771637.html" target="_blank"><img src="images/alittlemarket.png" /></a>
+					</span>
 			</div>
 		</span>
 	</nav>
