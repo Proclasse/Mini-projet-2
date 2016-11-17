@@ -17,23 +17,30 @@ header {
 	margin-bottom: 30px;
 }
 
-#menu a {
+#menu a:link, a:visited {
 	text-decoration: none;
 	color: rgb(244, 241, 241);
 	font-weight: bold;
 	font-size: 16px;
+	padding: 1px 5px;
+}
+
+#menu a:hover, a:active {
+	background-color: rgb(244, 241, 241);
+	color: rgb(254, 41, 61);
+	border-radius: 5px;
 }
 
 #menu ul {
-	padding: 10px; /* le padding à 0 permet de suppirmer le décalage vers la droite */
+	padding: 10px; /* le padding à 0 permet de supprimer le décalage vers la droite */
 	background-image: linear-gradient(90deg,rgb(254, 41, 61), rgb(254, 77, 95));
 	border-radius: 10px;
 	box-shadow: 0px 0px 10px #555;
+	margin-top: 0px;
 }
 
 #menu ul li {
-	padding: 5px;//
-	border: 1px solid red;
+	padding: 5px;
 	text-align: center;
 	list-style: none;
 	margin-top: -1px;
@@ -65,20 +72,35 @@ h1 {
 	border-radius: 10px;
 	border: 3px rgba(204, 102, 255, 0.5) double;
 	text-align: center;
-	text-decoration: none;
 	background-image: linear-gradient(0deg,rgb(210, 200,200), rgb(254, 77, 95));
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#cadre_photos a:link, a:visited {
+	color: rgb(254, 41, 61);
+	text-decoration: none;
+}
+
+#cadre_photos a:hover, a:active {
+	color: rgb(203, 1, 21);
+}
+
+/*							A développer!
+#panier {
+	margin: 0px;
+	padding: 0px;
+}
+*/
 footer {
 	border-radius: 10px;
 	clear: both;
 	margin-top: 50px;
 	text-align: center;
 	box-shadow: 0px 0px 10px #555 inset;
+	background-color: rgb(244, 241, 241);
 }
 
-footer a {
+footer a:link, a:visited {
 	text-decoration: none;
 	background-color: rgb(254, 41, 61);
 	padding: 5px 5px;
@@ -90,7 +112,12 @@ footer a {
 	box-shadow: 0px 0px 10px #555;
 }
 
-.icone_footer a {
+footer a:hover, a:active {
+	background-color: rgb(244, 241,241);
+	color:  rgb(254, 41, 61);
+}
+
+.icone_footer a:link, a:visited {
 	width: inherit;
 	background-color: inherit;
 	padding: 0px;

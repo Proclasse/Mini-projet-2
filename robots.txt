@@ -1,2 +1,10 @@
 User-agent: *
-Disallow: /
+Disallow: /adminCM.php
+Disallow: /modifs.php
+Disallow: /aj_mod_suppr.php
+Disallow: /css/
+Disallow: /images-fond/
+Disallow: /images/
+Disallow: /logos/
+Disallow: /photos/
+

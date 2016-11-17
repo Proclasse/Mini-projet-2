@@ -11,13 +11,13 @@
 			</div>
 	
 			<div class="bloc_footer">
-					<a href="contact.php">Contact</a>
+					<a href="contactb.php">Contact</a>
 			</div>
 		</span>
 		
 		<span class="groupe_bloc">
 		 	<div class="bloc_footer">
-					<a href="mentions.php">Mentions légales</a>
+					<a href="mentions.php">À propos</a>
 			</div>
 	
 			<div class="bloc_footer">

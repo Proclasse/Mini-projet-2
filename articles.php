@@ -31,7 +31,7 @@ mb_internal_encoding('UTF-8'); // traitement pour indiquer à php l'utilisation 
 			$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 			// requête dans la variable $sql puis injection de la requête dans la base, le tout dans la variable $req
-			$sql = 'SELECT categories.liens, produits.chemin, produits.nom, produits.lien_alm
+			$sql = 'SELECT categories.liens, produits.chemin, produits.nom, produits.lien_alm, produits.panier
 						FROM produits
 						INNER JOIN categories ON categorie_id = categories.id
 						WHERE categories.id = '.$id;
@@ -40,17 +40,32 @@ mb_internal_encoding('UTF-8'); // traitement pour indiquer à php l'utilisation 
 			$req -> setFetchMode(PDO::FETCH_ASSOC);
 
 				//	affichage des photos
-				foreach ($req as $u) {
-					echo "
-					<div id='cadre_photos'>
-					<img src=".$u['liens'].$u['chemin']." />
-					<hr />
-					<p><a href=".$u['lien_alm'].">".$u['nom']."</a></p>
-					<hr />
-					</div>
-					";
-				}
+				foreach ($req as $u) {	// le premier lien concerne l'affichage de l'image, le second concerne le lien textuel
+					
+					 if (isset($u['lien_alm'])){		// condition d'affichage du panier
+					 	echo "
+						<div id='cadre_photos'>
+							<a href=".$u['lien_alm']."><img src=".$u['liens'].$u['chemin']." /></a> 
+							<hr />
+							<p><a href=".$u['lien_alm'].">".$u['nom']."</a></p>
+							<hr />
+						</div>
+							" ;		//	fin du echo
+					}	// fin du if
+
+					else {
+						echo "
+						<div id='cadre_photos'>
+							<a href=".$u['lien_alm']."><img src=".$u['liens'].$u['chemin']." /></a> 
+							<hr />
+							<p><a href=".$u['lien_alm'].">".$u['nom']."</a></p>
+							<hr />
+						</div>
+							" ;		// fin du echo
+					}	// fin du else
+				}	// fin du foreach
 			} // fin du try
+			
 			catch(PDOException $e) {
 				echo "Problème de connexion à la base de données :".$e->getMessage();
 			die();
